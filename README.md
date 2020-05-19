@@ -14,7 +14,7 @@ click on create new project.
 Copy and paste code into Pycharm. 
 
 **4.17 LAB: Warm up: Automobile service cost**
-
+```
 service_choice = input('Enter desired auto service:\n')
 print('You entered:', service_choice)
 service_choice = service_choice.upper()
@@ -29,6 +29,7 @@ if service_cost == 0:
         print('Error: Requested service is not recognized')
 else:
         print('Cost of', service_choice.lower() + ': $' + str(service_cost))
+```       
         
  
 *Inputs*
