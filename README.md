@@ -1,33 +1,46 @@
-# Project Title
-
-One Paragraph of project description goes here
+# 4.17 LAB: Warm up: Automobile service cost
+In this lab we will write a program for Automobile Service Cost that will take the user input and print the services requested. In the lab we were provide the servies that are available: Oil change -- $35, Tire rotation -- $19, Car wash -- $7. 
 
 ## Getting Started
-
-These instructions will [do something] on your local machine for [development/experimentation/demo]
+These instructions will install Pycharm on your local machine.
 
 ### Prerequisites
-
-[Project] requires [software and version] to run, with [additional packages, libaries, or mods]. The commands below will [upgrade OS and install the prerequisites, or do something else]
-
-```
-sudo apt update
-sudo apt upgrade
-sudo apt install package1 package2
-```
+Python requires Pycharm to run, with with no other packages. The link to Pycharm's download will install Pycharm onto your system. 
+Link: [Pycharm](https://www.jetbrains.com/pycharm/download/#section=windows) 
 
 ## Running
-Once installed you can run the program with the following command
+Once Pycharm is installed on your system you can run it:
+click on create new project.
+Copy and paste code into Pycharm. 
 
-```
-python demo.py
-```
+**4.17 LAB: Warm up: Automobile service cost**
 
-Add any additional ways to run the program below
-
+service_choice = input('Enter desired auto service:\n')
+print('You entered:', service_choice)
+service_choice = service_choice.upper()
+service_cost = 0
+if service_choice == 'OIL CHANGE':
+        service_cost = 35
+if service_choice == 'TIRE ROTATION':
+        service_cost = 19
+if service_choice == 'CAR WASH':
+        service_cost = 7
+if service_cost == 0:
+        print('Error: Requested service is not recognized')
+else:
+        print('Cost of', service_choice.lower() + ': $' + str(service_cost))
+        
+ 
+*Inputs*
 ```
-python demo.py test.txt
+Oil change
+``` 
+*Output*
+```
+Enter desired auto service:
+You entered: Oil change
+Cost of oil change: $35
 ```
 
 ## Thanks
-Provide thank yous and attributions here. If someone helped you, you looked at another repository, or another article, provide it here.
+To Luma for showing me how to edit the readme file!
